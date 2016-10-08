@@ -132,7 +132,7 @@
   <property name="dist.home"     value="${basedir}/dist"/>
   <property name="manager.url"   value="http://localhost:8080/manager"/>
   <property name="src.home"      value="${basedir}/${app.name}/src"/>
-  <property name="webcontent.home"  value="${basedir}/WebContent"/>
+  <property name="webcontent.home"  value="${basedir}/${app.name}/WebContent"/>
 
 
 <!-- ==================== External Dependencies =========================== -->
