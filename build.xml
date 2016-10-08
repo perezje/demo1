@@ -45,7 +45,7 @@
      set to the current working directory.
 -->
 
-<project name="demoProject" default="all" basedir="./demoCICD1">
+<project name="demoProject" default="all" basedir="./">
 
 
 
