@@ -131,7 +131,7 @@
   <property name="catalina.home" value="/home/osboxes/apache-tomcat-7.0.72"/>
   <property name="dist.home"     value="${basedir}/dist"/>
   <property name="manager.url"   value="http://localhost:8080/manager"/>
-  <property name="src.home"      value="${basedir}/src"/>
+  <property name="src.home"      value="${basedir}/${app.name}/src"/>
   <property name="webcontent.home"  value="${basedir}/WebContent"/>
 
 
