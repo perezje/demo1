@@ -130,10 +130,8 @@
   <property name="build.home"    value="${basedir}/build"/>
   <property name="catalina.home" value="/home/osboxes/apache-tomcat-7.0.72"/>
   <property name="dist.home"     value="${basedir}/dist"/>
-  <property name="docs.home"     value="${basedir}/docs"/>
   <property name="manager.url"   value="http://localhost:8080/manager"/>
   <property name="src.home"      value="${basedir}/src"/>
-  <property name="web.home"      value="${basedir}/web"/>
   <property name="webcontent.home"  value="${basedir}/WebContent"/>
 
 
@@ -327,12 +325,7 @@
   <target name="dist" depends="compile,javadoc"
    description="Create binary distribution">
 
-    <!-- Copy documentation subdirectories -->
-    <mkdir   dir="${dist.home}/docs"/>
-    <copy    todir="${dist.home}/docs">
-      <fileset dir="${docs.home}"/>
-    </copy>
-    
+   
        <!-- Copy WebContents subdirectories -->
      <copy    todir="${build.home}">
       <fileset dir="${webcontent.home}"/>
@@ -448,12 +441,7 @@
     <mkdir  dir="${build.home}/WEB-INF/classes"/>
 
 
-    <!-- Copy static content of this web application -->
-    <copy todir="${build.home}">
-      <fileset dir="${web.home}"/>
-    </copy>
-
-    <!-- Copy external dependencies as required -->
+     <!-- Copy external dependencies as required -->
     <!-- *** CUSTOMIZE HERE AS REQUIRED BY YOUR APPLICATION *** -->
     <mkdir  dir="${build.home}/WEB-INF/lib"/>
 <!--
